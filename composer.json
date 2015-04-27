@@ -1,0 +1,23 @@
+{
+    "name": "wegooup/subscription",
+    "description": "",
+    "authors": [
+        {
+            "name": "Nicolas Ariel Fernandez",
+            "email": "nico_06_89@hotmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "4.2.*"
+    },
+    "autoload": {
+        "classmap": [
+            "src/migrations"
+        ],
+        "psr-0": {
+            "Wegooup\\Subscription\\": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}
