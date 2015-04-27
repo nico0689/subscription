@@ -32,6 +32,12 @@ class SubscriptionServiceProvider extends ServiceProvider {
 		{
 			return new Subscription;
 		});
+		
+		$this->app->booting(function()
+		{
+		  $loader = \Illuminate\Foundation\AliasLoader::getInstance();
+		  $loader->alias('Subscription', 'Wegooup\Subscription\Facades\Subscription');
+		});
 	}
 
 	/**
