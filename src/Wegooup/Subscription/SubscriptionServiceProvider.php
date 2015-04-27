@@ -28,7 +28,10 @@ class SubscriptionServiceProvider extends ServiceProvider {
 	 */
 	public function register()
 	{
-		//
+		$this->app['subscription'] = $this->app->share(function($app)
+		{
+			return new Subscription;
+		});
 	}
 
 	/**
